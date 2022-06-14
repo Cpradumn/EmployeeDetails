@@ -19,6 +19,7 @@ namespace EmployeeDetails
             */
 
             /*
+             * Employee1
             // Property initializer syntax
             Date date1 = new Date();
             date1.Day = 13;
@@ -38,6 +39,8 @@ namespace EmployeeDetails
             */
 
             /*
+             * 
+             * Student
             Student student1 = new Student();
             student1.Display();
 
@@ -63,6 +66,7 @@ namespace EmployeeDetails
             //emparray.Display();
 
             /*
+             * Employee Array
             int [] arr = new int[5] {1, 2, 3, 4, 5};
 
             EmpArray[] emplist = new EmpArray[5]
@@ -82,6 +86,7 @@ namespace EmployeeDetails
             */
 
             /*
+             * Array List
             ArrayList list = new ArrayList();
             list.Add(10);
             list.Add("Hello");
@@ -99,6 +104,10 @@ namespace EmployeeDetails
 
 
             /*
+             * 
+             * Array List Product Details
+             * 
+             * 
             ArrayList list = new ArrayList()
             {
                 new ProductDetails{ProductName="Laptop HP Probook G6",ProductCode ="HJXC346YR",ProductPrice=78000.546f},
@@ -111,9 +120,38 @@ namespace EmployeeDetails
             }
             */
 
+            // https://github.com/Cpradumn
 
+
+            /*
+            List<int> intlist = new List<int>() { 1, 2, 3, 4, 5};
+
+            foreach(int item in intlist)
+            {
+                Console.WriteLine(item);
+            }
+
+            List<string> stringlist = new List<string>() { "red", "Yeoolw", "Green", "Blue" };
+
+            foreach(string item2 in stringlist)
+            {
+                Console.WriteLine(item2);
+            }
+
+            */
+
+            List<Student> students = new List<Student>()
+            {
+                new Student(1001, "Pradumn", 24, 86.67f, Gender.Male, Branch.IT),
+                new Student(1002,"sachin",25,88.60f,Gender.Male,Branch.Electrical)
+            };
+
+            foreach (Student stud in students)
+            {
+                Console.WriteLine(stud);
+            }
 
         }
-       
+
     }
 }

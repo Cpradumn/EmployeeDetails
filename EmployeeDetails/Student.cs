@@ -26,6 +26,10 @@ namespace EmployeeDetails
             percentage = 0.0f;
             
         }
+        public override string ToString()
+        {
+            return $"Roll No : {rollno}, Name : {name},Age : {age},Percentage : {percentage},Gender : {gender},Branch : {branch}";
+        }
 
         public Student(int rollno, string name, int age, float percentage, Gender gender,Branch branch )
         {
