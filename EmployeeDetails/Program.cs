@@ -140,6 +140,10 @@ namespace EmployeeDetails
 
             */
 
+
+            /*
+             * 
+             * List Student
             List<Student> students = new List<Student>()
             {
                 new Student(1001, "Pradumn", 24, 86.67f, Gender.Male, Branch.IT),
@@ -150,6 +154,26 @@ namespace EmployeeDetails
             {
                 Console.WriteLine(stud);
             }
+            */
+
+
+            // Dictionary --> generic collection object to store the data int the form of key-value pair
+
+
+            /*
+            Dictionary<int, string> Countries = new Dictionary<int, string>();
+            Countries.Add(91, "India");
+            Countries.Add(45, "Germany");
+            Countries.Add(1, "USA");
+
+            Countries.Remove(0);
+            foreach(var country in Countries)
+            {
+                Console.WriteLine(country.Key+" "+country.Value);
+            }
+
+            */
+
 
         }
 
