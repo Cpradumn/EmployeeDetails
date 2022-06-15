@@ -202,9 +202,35 @@ namespace EmployeeDetails
             }
 
 
-            Stack<Student> stud1 = new Stack<Student>();
+            //// Student Stack Details 
+            ///
 
-            //stack.Push((Student)stud1);
+            // Student Stack Details 
+            Console.WriteLine("Student Stack Details : ");
+
+            Stack<Student> stack1 = new Stack<Student>();
+
+            stack1.Push(new Student(1001, "Pradumn", 24, 86.67f, Gender.Male, Branch.IT));
+            stack1.Push(new Student(1002, "sachin", 25, 88.60f, Gender.Male, Branch.Electrical));
+
+            foreach (Student stud in stack1)
+            {
+                Console.WriteLine(stud);
+            }
+
+
+            // Student Queue Details
+
+            Console.WriteLine("Student Queue Details");
+
+            Queue<Student> queue1 = new Queue<Student>();
+            queue1.Enqueue(new Student(1001, "Pradumn", 24, 86.67f, Gender.Male, Branch.IT));
+            queue1.Enqueue(new Student(1002, "sachin", 25, 88.60f, Gender.Male, Branch.Electrical));
+
+            foreach (Student stud4 in queue1)
+            {
+                Console.WriteLine(stud4);
+            }
 
         }
 
