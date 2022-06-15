@@ -6,8 +6,57 @@ namespace EmployeeDetails
 {
    public class Program
     {
+
+        static void Addition()
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Addition is :{a + b}");
+        }
+        static void Substract()
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Substract is :{a - b}");
+        }
+
+        public delegate void MyDelegate();
+        public class Calculate
+        {
+            public event MyDelegate add;
+            public event MyDelegate sub;
+
+            public void Accept (int n)
+            {
+                if(n ==1)
+                {
+                    add();
+                }
+                else if(n ==2)
+                {
+                    sub();
+                }
+            }
+        }
         public static void Main(string[] args)
         {
+
+            Calculate c1 = new Calculate();
+            c1.add += new MyDelegate(Addition);
+            c1.sub += new MyDelegate(Substract);
+
+            c1.Accept(2);
+
+
+
+
+
+
+
+
+
+
+
             /*
              * 
              * Employee Class 
@@ -174,6 +223,7 @@ namespace EmployeeDetails
 
             */
 
+            /*
             Console.WriteLine("Employee Stack Details : ");
 
             Stack<Employee> stack = new Stack<Employee>();
@@ -231,6 +281,11 @@ namespace EmployeeDetails
             {
                 Console.WriteLine(stud4);
             }
+
+            */
+
+
+            
 
         }
 
