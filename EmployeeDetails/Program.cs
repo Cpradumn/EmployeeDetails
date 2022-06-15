@@ -174,6 +174,37 @@ namespace EmployeeDetails
 
             */
 
+            Console.WriteLine("Employee Stack Details : ");
+
+            Stack<Employee> stack = new Stack<Employee>();
+            //{
+            //    //new Employee (1002,"Sachin","IT","Admin",45000),
+
+            //};
+            stack.Push(new Employee(1002, "Sachin", "IT", "Admin", 45000.45f)); // ---> Push
+            //stack.Pop(); // Pop --> Remove
+
+            foreach(Employee emp in stack)
+            {
+                Console.WriteLine(emp);
+            }
+
+
+            Console.WriteLine("Employee Queue Details : ");
+
+            Queue<Employee> queue = new Queue<Employee>();
+            queue.Enqueue(new Employee(1002, "Sachin", "IT", "Admin", 45000)); //Enqueue --> Add
+            //queue.Dequeue(); // Dequeue --> Remove
+
+            foreach (Employee emp1 in queue)
+            {
+                Console.WriteLine(emp1);
+            }
+
+
+            Stack<Student> stud1 = new Stack<Student>();
+
+            //stack.Push((Student)stud1);
 
         }
 
